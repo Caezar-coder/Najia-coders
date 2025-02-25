@@ -5,6 +5,8 @@ const About = () => {
   const data = [
     {
       title: "Empowering Youth",
+
+      
       content:
         "NaijaCoder is dedicated to equipping young individuals with valuable coding skills, providing them with tools to build a better future.",
       img: "/public/round check mark yellow.png",
@@ -38,6 +40,7 @@ const About = () => {
       content:
         "NaijaCoder is dedicated to equipping young individuals with valuable coding skills, providing them with tools to build a better future.",
       img: "/public/round check mark yellow.png",
+
     },
   ];
   return (
@@ -77,6 +80,15 @@ const About = () => {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+      <div className="team_container">
+        <div className="team_header">
+          <p>Meet our team</p>
+        </div>
+        
+        <div className="team_members_container">
+          
         </div>
       </div>
     </div>
