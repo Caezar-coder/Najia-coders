@@ -1,0 +1,15 @@
+.About_Body {
+    width: 100%;
+    height: 100vh;
+    min-height: max-content;
+    background-image: url("/public/background_Image2.png");
+  }
+  
+  .About_content {
+    width: 100%;
+    height: 100%;
+    /* z-index: 2; */
+  }
+  
+  
+  

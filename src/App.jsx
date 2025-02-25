@@ -13,7 +13,7 @@ import Teacher_Login from './Auth/Teacher_Login/Teacher_Login'
 const App = () => {
   const router = createBrowserRouter([
     {
-      path: "",
+      path: "/",
       element: <Layout />,
       children:[
         {
