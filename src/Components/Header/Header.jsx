@@ -44,8 +44,8 @@ const Header = () => {
                />
                 {
                     dropDown? <div className="dropCard">
-                        <div className="teacher" onClick={handleTeacherRegister}>As a teacher</div>
-                        <div className="student" onClick={handleStudentRegister}>As a student</div>
+                        <button className="teacher" onClick={handleTeacherRegister}>As a teacher</button>
+                        <button className="student" onClick={handleStudentRegister}>As a student</button>
                     </div>: null
                 }
             </div>
