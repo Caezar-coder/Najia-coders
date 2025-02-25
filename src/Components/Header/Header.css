@@ -1,0 +1,80 @@
+.Header_Body{
+    width: 100%;
+    height: 15vh;
+    position: fixed;
+    background-color: white;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+}
+.Header_Wrapper{
+    width: 1180px;
+    height: 100%;
+    display: flex;
+}
+
+.logo_Holder{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.Texts{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Directory{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #048C63;
+    color: white;
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   position: relative;
+}
+.dropCard{
+    width: 100px;
+    min-width: max-content;
+    height: 90px;
+    position: absolute;
+    top: 40px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    transition: 0.8s ease 
+}
+
+.teacher{
+    width: 150px;
+    min-width: max-content;
+    height: 40px;
+    border-radius: 20px;
+    background-color:#048C63 ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.8s ease
+}
+.student{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color:#048C63 ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.8s ease 
+}
