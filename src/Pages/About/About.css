@@ -2,14 +2,169 @@
     width: 100%;
     height: 100vh;
     min-height: max-content;
+    object-fit: contain;
     background-image: url("/public/background_Image2.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
   }
   
   .About_content {
+    width: 1180px;
+    height: 1000%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .about_heroSection{
     width: 100%;
+    height: 613px;
+    background-color:  #048C63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .hero_text{
+    width: 45%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+
+    & h2{
+        width: 85%;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    & p{
+        color: #fff;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+  }
+  .hero_image{
+    width: 45%;
     height: 100%;
-    /* z-index: 2; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
+
+  .img_container{
+    width: 537px;
+    height: 480px;
+
+    & img{
+        width: 100%;
+        height: 100%;
+    }
+  }
   
+  .section_two{
+    width: 100%;
+    height: 1000px;
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
   
+  .section_text{
+    width: 100%;
+    text-align: center;
+
+    & h4{
+        color: rgba(0, 0, 0, 0.90);
+        text-align: center;
+        font-family: Geist;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+  }
+
+  .card_Container{
+    width: 100%;
+    /* height: 70vh; */
+    min-height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+  }
+
+  .hero_card{
+    display: flex;
+    width: 578px;
+    height: 255px;
+    padding: 36.5px 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #048C63;
+    color: white;
+  }
+  .card_Header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    & p{
+        color: #FFF;
+        text-align: center;
+        font-family: Geist;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+  }
+  .img_card{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    & img{
+        width: 100%;
+        height: 100%;
+
+    }
+
+  }
+
+  .card_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card_content p{
+    width: 85%;
+    color: #FFF;
+    text-align: center;
+    font-family: Geist;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+  }
