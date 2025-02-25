@@ -1,0 +1,147 @@
+.homebody {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 100px;
+    background-color: white;
+    }
+    
+    .sec1 {
+      width: 92%;
+  
+      h1{
+        font-size: 70px;
+        font-family: sans-serif;
+        color: rgba(0, 0, 0, 0.993);
+      }
+  
+      p{
+        color: rgba(0, 0, 0, 0.900);
+        font-size: 34px;
+        font-family: Verdana, sans-serif;
+        text-decoration: azure;
+      }
+  
+    }
+  
+  .sec2 {
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    gap: 49px;
+    margin-top: 120px;
+    align-items: flex-end; 
+    
+  
+  
+    img{
+      width: 190px;
+      height: 280px;
+      border-radius: 14px;
+    }
+  }
+  
+  .sec2img {
+  
+    img{
+      width: 190px;
+      height: 140px;
+      border-radius: 14px;
+    }
+  
+    p{
+      height: 96px;
+      background-color: rgb(13, 39, 13);
+      border-radius: 14px;
+      color: aliceblue;
+      font-size: 23px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  .sec3 {
+    width: 100vw;
+    height: 480px;
+    margin-top: 120px;
+    background-color: rgb(111, 221, 111);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    h2{
+      font-size: 70px;
+      letter-spacing: 7px;
+  
+    }
+  }
+  
+  .supporters {
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+  
+  
+    img{
+      width: 300px;
+      height: 140px;
+    }
+  }  
+  
+  .sec4 {
+    width: 100vw;
+    height: fit-content;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    h3{
+      font-size: 70px;
+      letter-spacing: 4px;
+  
+    }
+  }
+  
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+  
+  
+    img{
+      width: 384px;
+      height: 440px;
+      margin: 10PX;
+    }
+  }
+  
+  .imgBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    img{
+      width: 384px;
+      height: 210px;
+      margin: 10px;
+    }
+  }
+  
+  button{
+    font-size: 20px;
+    padding: 4px 60px;
+    border-radius: 60px;
+    margin-top: 40px;
+    text-decoration: underline 2px;
+    color: rgb(13, 39, 13);
+    border: 4px solid rgb(13, 39, 13);
+    display: flex;
+    align-items: center;
+  }
