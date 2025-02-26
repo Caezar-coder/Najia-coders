@@ -10,33 +10,33 @@ const About = () => {
       img: "/round check mark yellow.png",
     },
     {
-      title: "Empowering Youth",
+      title: "Accessible Learning",
       content:
-        "NaijaCoder is dedicated to equipping young individuals with valuable coding skills, providing them with tools to build a better future.",
+        "It offers an opportunity for everyone intrested in coding to learn, regardless of their background or experience level.",
       img: "/round check mark yellow.png",
     },
     {
-      title: "Empowering Youth",
+      title: "Community Impact",
       content:
-        "NaijaCoder is dedicated to equipping young individuals with valuable coding skills, providing them with tools to build a better future.",
+        "By learning or volunteering, you are contributing to a cause that drives positive change and supports the growth of tech talent in Nigeria.",
       img: "/round check mark yellow.png",
     },
     {
-      title: "Empowering Youth",
+      title: "Supportive Environment",
       content:
-        "NaijaCoder is dedicated to equipping young individuals with valuable coding skills, providing them with tools to build a better future.",
+        "Whether you are a learner or a volunteer, NaijaCoder fosters a collaborative and inspiring environment for growth.",
       img: "/round check mark yellow.png",
     },
     {
-      title: "Empowering Youth",
+      title: "Hands-on Experience",
       content:
-        "NaijaCoder is dedicated to equipping young individuals with valuable coding skills, providing them with tools to build a better future.",
+        "For volunteers, its a chance to share knowledge, gain teaching experience, and build a network within the tech community.",
       img: "/round check mark yellow.png",
     },
     {
-      title: "Empowering Youth",
+      title: "Opportunities to Give Back",
       content:
-        "NaijaCoder is dedicated to equipping young individuals with valuable coding skills, providing them with tools to build a better future.",
+        "Donating or teaching allows you to play a role in empowering the next generation of tech innovators",
       img: "/round check mark yellow.png",
     },
   ];
@@ -131,7 +131,7 @@ const About = () => {
 
                 <div className="team_text">
                   <h4>{i.title1}</h4>
-                  <p>{i.title2}</p>
+                  <span>{i.title2}</span>
                   <p>{i.title3}</p>
                 </div>
               </div>
@@ -146,7 +146,7 @@ const About = () => {
 
                 <div className="team_text">
                   <h4>{i.title1}</h4>
-                  <p>{i.title2}</p>
+                  <span>{i.title2}</span>
                   <p>{i.title3}</p>
                 </div>
               </div>
@@ -160,7 +160,7 @@ const About = () => {
 
               <div className="team_text">
                 <h4>Oluwatobi Alabi</h4>
-                <p>Social media manager</p>
+                <span>Social media manager</span>
                 <p>Linkdn Link</p>
               </div>
             </div>
