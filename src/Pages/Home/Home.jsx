@@ -28,36 +28,35 @@ const Home = () => {
      </div>
 
      <div className='sec2'>
-     <img src='\public\images\Group 140.png' />
+     <img src='\Group 140.png' />
 
      <div className='sec2img'>
-     <img src='\public\images\pexels-ron-lach-9783812.jpg' />
+     <img src='\pexels-ron-lach-9783812.jpg' />
      <p>providing free instructions on basics of algorithms</p>
      </div>
 
       <img style={{
         height: '180px'
-      }} src='\public\images\hackerBg.jpeg' />
+      }} src='\hackerBg.jpeg' />
 
       <div className='sec2img'>
-      <img src='\public\images\laptop.jpeg' />
+      <img src='\pexels-tonyzebastian-10011662 (1).jpg' />
       <p>providing free instructions on basics of algorithms</p>
       </div>
 
-     <img src='\public\images\Group 141.png' />
+     <img src='\Group 141.png' />
       {/* <img src='\public\images\pexels-tonyzebastian-10011662.jpg' /> */}
       
       
-      <img src='' />
      </div>
 
      <div className='sec3'>
       <h2><b>Our Supporters</b></h2>
       <div className='supporters'>
-       <img src='\public\images\mastercard.jpeg' />
-       <img src='\public\images\simonsFoundation.png' />
-       <img src='\public\images\Berkeley.png' />
-       <img src='\public\images\mercatus.png' />
+       <img src='\mastercard.jpeg'  alt='mastercard'/>
+       <img src='\simonsFoundation.png' alt='SimonsFoundation'/>
+       <img src='\Berkeley.png' alt='Berkeley' />
+       <img src='/mercatus.png' alt='mercatus'/>
       
       </div>
       
@@ -67,12 +66,12 @@ const Home = () => {
       <h3>Our Gallery</h3>
 
       <div className='gallery'>
-      <img src='\public\images\WhatsApp Image 2025-02-25 at 14.38.15_0e404587.jpg' />
+      <img src='\WhatsApp Image 2025-02-25 at 14.38.15_0e404587.jpg' />
       <div className='imgBody'>
-      <img src='\public\images\WhatsApp Image 2025-02-25 at 14.52.29_cfa199ef.jpg' />
-      <img src='\public\images\WhatsApp Image 2025-02-25 at 14.41.53_832e0478.jpg' />
+      <img src='\WhatsApp Image 2025-02-25 at 14.52.29_cfa199ef.jpg' />
+      <img src='\WhatsApp Image 2025-02-25 at 14.41.53_832e0478.jpg' />
       </div>
-       <img src='\public\images\WhatsApp Image 2025-02-25 at 14.38.15_871409e4.jpg' />
+       <img src='\WhatsApp Image 2025-02-25 at 14.38.15_871409e4.jpg' />
       
       </div>
       <button> See More <IoIosArrowRoundForward size={70} /></button>
