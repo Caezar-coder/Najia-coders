@@ -145,3 +145,146 @@
     display: flex;
     align-items: center;
   }
+
+
+  
+
+
+  /* Mobile responsiveness (screen width between 480px and 768px) */
+  @media (max-width:769px) and (min-width:480px){
+    .homebody{
+      width: 90%;
+      margin: 50px;
+    }
+
+    .sec1 h1{
+      font-size: 45px;
+    }
+
+    .sec1 p{
+      font-size: 24px;
+      line-height: 1.6;
+    }
+
+    .sec2{
+      flex-direction: column;
+      margin-top: 50px;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .sec2 img{
+      width: 80%;
+      height: auto;
+    }
+
+    .sec1img img{
+      width: 80%;
+      height: auto;
+    }
+
+    .sec1img p{
+      font-size: 18px;
+      padding: 10px;
+    }
+
+    .sec3 h2{
+      font-size: 45px;
+      letter-spacing: 3px;
+    }
+
+    .supporters{
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .supporters img{
+      width: 250px;
+      height: auto;
+    }
+
+    .gallery{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .gallery img{
+      width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+
+    .imgBody{
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    .imgBody img{
+      width: 100%;
+      height: auto;
+    }
+
+    button{
+      font-size: 16px;
+      padding: 10px 30px;
+    }
+  }
+
+
+  /* Large Tablets/small desktop responsiveness (screen width between 769px and 1000px) */
+
+  @media (max-width: 1024px) and (min-width: 789px){
+    .homebody{
+      width: 85%;
+      margin: 70px;
+    }
+
+    .sec1 h1{
+      font-size: 55px;
+    }
+
+    .sec1 p{
+      font-size: 28px;
+    }
+
+    .sec2{
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .sec2 img{
+      width: 80%;
+      height: auto;
+    }
+
+    .sec2img img{
+      width: 80%;
+      height: auto;
+    }
+
+    .sec3 h2{
+      font-size: 50px;
+    }
+
+    .supporters{
+      flex-direction: row;
+      gap: 15px;
+    }
+
+    .supporters img{
+      width: 250px;
+      height: auto;
+    }
+
+    .gallery{
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    .gallery img{
+      width: 45%;
+      height: auto;
+    }
+  }
