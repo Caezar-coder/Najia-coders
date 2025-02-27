@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Involve.css'
 import { useNavigate } from 'react-router-dom'
+import Popup from '../../Components/Popup/Popup'
 
 const Involve = () => {
+  const [popup, setPopup]= useState(false)
+  const handlepopup= ()=>{
+    setPopup(true)
+  }
   const navigate = useNavigate()
+
+
+
   return (
     <>
-    <div className="theHeaderPusher"></div>
+    {/* <div className="theHeaderPusher"></div> */}
     <div className='getInvolvePageWRapper'>
       <div className="getInvolvePageWRapperCover">
         <div className="getInvolvePageWRapperCoverTextWrapper">
@@ -26,9 +34,14 @@ const Involve = () => {
           <p>Every contribution supports resources ,mentorshipand hands-on experience
             ,giving students the <br /> tools they need to succeed. <br /> Donate today and help shape the future of young innovators </p>
 
-          <button className='teacherbtn1'>Donate</button>
+
+          <button className='teacherbtn1' onClick={handlepopup}>Donate</button>
+          <Popup open={popup} onClose={()=> setPopup(false)}/>
+
         </div>
       </div>
+
+
     </div>
     </>
   )

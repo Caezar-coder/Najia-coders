@@ -43,19 +43,19 @@ const About = () => {
 
   const secondData = [
     {
-      img: "/public/Jelani Nelson.png",
+      img: "/Jelani Nelson.png",
       title1: "Jelani Nelson, Ph.d",
       title2: "Lead advisor",
       title3: "Wikipedia link",
     },
     {
-      img: "/public/Daniel Alabi.png",
+      img: "/Daniel Alabi.png",
       title1: "Daniel Alabi, Ph.d",
       title2: "President and lead instructor",
       title3: "Website link",
     },
     {
-      img: "/public/Lekan Afuye.png",
+      img: "/Lekan Afuye.png",
       title1: "Lekan Afuye, Ph.d",
       title2: "Vice president",
       title3: "Linkdn link",
@@ -64,7 +64,7 @@ const About = () => {
 
   const thirdData = [
     {
-      img: "/public/Alida Monaco.png",
+      img: "/Alida Monaco.png",
       title1: "Alida Monaco, Ph.d",
       title2: "Chief of operations",
       title3: "Linkdn link",
