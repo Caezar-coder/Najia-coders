@@ -1,0 +1,119 @@
+.theHeaderPusher{
+    width: 100%;
+    height: 105px;
+}
+
+.getInvolvePageWRapper{
+    width: 100%;
+    height: 100vh;
+    background: red;
+    background-image: url("public/involveWaterMarkImage.JPG");
+    background-size: cover;
+
+    & .getInvolvePageWRapperCover{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        background: #000000a0;
+    }
+}
+
+.getInvolvePageWRapperCoverTextWrapper{
+    width: 80%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    color: white;
+    /* background-color: pink; */
+
+    & p{
+        font-weight: 300;
+        font-size: 23px;
+        font-family: 'Giest',sans-serif;
+    }
+
+    & h1{
+        font-family: Arial Bold, Helvetica Bold, sans-serif;
+    }
+}
+
+.teacherbtn{
+    width: max-content;
+    height: max-content;
+    border-radius: 30px;
+    padding: 8px;
+    font-size: 17px;
+    background-color: #048c63;
+    color: white;
+    border: 0;
+}
+.teacherbtn1{
+    width: max-content;
+    height: max-content;
+    border-radius: 30px;
+    padding: 8px 35px;
+    font-size: 17px;
+    background-color: #048c63;
+    color: white;
+    border: 0;
+}
+
+
+
+@media screen and (max-width: 480px){
+    .getInvolvePageWRapper{
+        width: 100%;
+        height: 100vh;
+        background: red;
+        background-image: url("../../assets/involveWaterMarkImage.JPG");
+        background-size: cover;
+    
+        & .getInvolvePageWRapperCover{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+            background: #000000a0;
+        }
+    }
+
+
+
+    .getInvolvePageWRapperCoverTextWrapper{
+        width: 95%;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        color: white;
+        /* background-color: pink; */
+    
+        & p{
+            font-weight: 300;
+            font-size: 16px;
+            text-decoration: none;
+            /* text-wrap: nowrap; */
+            margin: 0;
+            font-family: 'Giest',sans-serif;
+        }
+    
+        & h1{
+            font-size: 20px;
+            font-family: Arial Bold, Helvetica Bold, sans-serif;
+        }
+    }
+}
