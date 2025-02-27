@@ -1,0 +1,226 @@
+.card_Donation_body{
+    width: 100%;
+    height: 80vh;
+    min-height: max-content;
+    display: flex;
+    justify-content: center;
+    background-image: url("/public//background_Image2.png");
+}
+
+.card_Donation_wrapper{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card_Donation_wrapperHeader{
+    width: 100%;
+    height: 40px;
+    background-color:#38995D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.wrapper_texts{
+    color: white;
+}
+
+.wrapper_content{
+    width: 100%;
+    height: 80%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.credit_cardContainer{
+    width: 60%;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid #048C63;
+    background: #E2EDD6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.content_header{
+    width: 60%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+.header_title{
+    display: flex;
+    gap: 10px;
+}
+
+.card_number{
+    width: 60%;
+    height: 40px;
+    border: none;
+    padding: 10px;
+    background-color: lightgray;
+}
+.credit_card_details{
+    width: 60%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.expiry{
+    width: 70px;
+    height: 100%;
+    border-radius: 8px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+}
+.cvv{
+    width: 50px;
+    height: 100%;
+    border-radius: 8px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+}
+.billing_zip{
+    width: 70px;
+    height: 100%;
+    border-radius: 8px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+}
+.creditCard_option{
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+.creditCard_option1{
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid #6CA333;
+    background: #FFF;
+    color: #6CA333;
+    padding: 10px;
+    font-family: Geist;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.credit_btn{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    padding: 2px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background-color: #38995D;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .card_Donation_wrapper {
+        width: 80%;
+    }
+
+    .credit_cardContainer {
+        width: 80%;
+    }
+
+    .content_header, .credit_card_details, .card_number {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card_Donation_wrapper {
+        width: 90%;
+    }
+
+    .credit_cardContainer {
+        width: 90%;
+    }
+
+    .content_header, .credit_card_details, .card_number {
+        width: 90%;
+    }
+
+    .creditCard_option, .creditCard_option1 {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card_Donation_wrapper {
+        width: 95%;
+    }
+
+    .credit_cardContainer {
+        width: 95%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .content_header {
+        width: 100%;
+        /* flex-direction: column; */
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .credit_card_details {
+        width: 100%;
+        /* flex-direction: column; */
+        gap: 10px;
+        align-items: center;
+    }
+
+    .card_number {
+        width: 100%;
+    }
+
+    .creditCard_option, .creditCard_option1 {
+        width: 80%;
+    }
+
+    .credit_btn {
+        width: 40%;
+    }
+}
