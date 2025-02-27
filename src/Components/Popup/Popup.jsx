@@ -12,6 +12,9 @@ const Popup = ({ open, onClose}) => {
     const handleCardDonation =()=>{
         nav("/card_donation")
     }
+    const handlePaypal =()=>{
+        nav("/paypal")
+    }
   if (!open) return null;
   return (
     <div className="popupBody">
@@ -24,7 +27,7 @@ const Popup = ({ open, onClose}) => {
                 <RiBankCardFill style={{color: "gold", fontSize: "24px"}} />
                 <h4 className="donation_text">Card Donation</h4>
             </div>
-            <div className="bank_card">
+            <div className="bank_card" onClick={handlePaypal}>
                 <IoLogoPaypal style={{color: "navy", fontSize: "24px"}} />
                 <h4 className="donation_text">Donate with paypal</h4>
     
