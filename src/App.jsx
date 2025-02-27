@@ -2,13 +2,13 @@ import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './Pages/Layout/Layout'
 import About from './Pages/About/About'
-import Program from './Pages/Program-overview/Program'
 import Involve from './Pages/Get-Involved/Involve'
 import Home from './Pages/Home/Home'
 import Student_Signup from './Auth/Student_signup/Student_Signup'
 import Teacher_Signup from './Auth/Teacher_Signup/Teacher_Signup'
 import Card_Donation from './Pages/card-donations/Card_Donation'
 import Paypal from './Pages/paypalPage/Paypal'
+import Program from './Pages/Program-overview/Program'
 
 
 const App = () => {
@@ -27,7 +27,7 @@ const App = () => {
         },
         {
           path: "program",
-          element: <Program />
+          element: <Program/>
         },
         {
           path: "Get_Involved",
