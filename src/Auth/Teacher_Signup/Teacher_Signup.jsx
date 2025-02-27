@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../../Auth/Teacher_Signup/Teacher_Signup.css'
 import { HiArrowLeft } from "react-icons/hi";
 import { useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import Aplication_Popup from '../../Components/application_popup/Aplication_Popup';
 
 
 const Teacher_Signup = () => {
@@ -11,6 +11,7 @@ const Teacher_Signup = () => {
   const [education, setEducation] = useState("");
   const [experience, setExperience] = useState("");
   const [volunteering, setVolunteering] = useState("");
+  const [popup, setPopup]= useState(false)
 
   const [userInputs, setUserinputs] = useState(
     {
@@ -28,8 +29,11 @@ const Teacher_Signup = () => {
 
   const handleSubmit = () =>{
     if(!userInputs.firstName && !userInputs.lastName && !userInputs.email && !userInputs.phoneNumber && !userInputs.address){
-      toast.error('fill in all credencials!')
-    }
+      // toast.error('fill in all credencials!')
+      setPopup(false)
+    }else(
+      setPopup(true)
+    )
   }
   
   
@@ -169,6 +173,7 @@ const Teacher_Signup = () => {
           <input type="text" placeholder='Briefly tell us your motivation for applying for this position ' className='motivatebtn'/>
           <button onClick={handleSubmit}>Submit</button>
         </div>
+        <Aplication_Popup open={popup} onClose={()=> setPopup(false)}/>
       </div>
     </div>
     </>

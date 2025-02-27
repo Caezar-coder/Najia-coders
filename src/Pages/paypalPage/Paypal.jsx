@@ -3,14 +3,18 @@ import { IoMdClose } from "react-icons/io";
 import { FaCircleCheck } from "react-icons/fa6";
 import './paypal.css';
 import { useNavigate } from 'react-router-dom';
+import DonationPopup from '../../Components/Donation_popup/DonationPopup';
 
 const Paypal = () => {
     const [selectedAmount, setSelectedAmount] = useState(null);
-    const [donationType, setDonationType] = useState("one-time"); // "one-time" or "monthly"
+    const [donationType, setDonationType] = useState("one-time");
+    const [donationPopup, setDonationPopup]= useState(false) 
     const navigate = useNavigate();
 
     const amounts = [50, 100, 200, 500, 1000, 2000];
-
+    const handleDonationpopup=()=>{
+        setDonationPopup(true)
+    }
     return (
         <div className='paypalWrapper'>
             <IoMdClose className='closePaypayPageIcon' onClick={() => navigate('/Get_Involved')} />
@@ -65,9 +69,10 @@ const Paypal = () => {
 
                         <input name="comment" placeholder='Leave a comment' />
                     </div>
-                    <button className="paypalDonateBtn">
+                    <button className="paypalDonateBtn" onClick={handleDonationpopup}>
                         DONATE ${selectedAmount}
                     </button>
+                    <DonationPopup open={donationPopup}  onClose={()=> setDonationPopup(false)}/>
                 </div>
             </div>
         </div>

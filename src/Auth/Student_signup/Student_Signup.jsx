@@ -57,7 +57,7 @@ const Student_Signup = () => {
           <label>What interests you about this program?</label>
           <textarea className="textarea-input-6" placeholder="Brief explanation why you want to join this program" ></textarea>
         </div>
-        <button type="submit" className="signup-button-6">Submit</button>
+        <button type="submit" className="signup-button">Submit</button>
       </form>
     </div>
    
