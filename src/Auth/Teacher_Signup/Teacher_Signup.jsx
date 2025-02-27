@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 import '../../Auth/Teacher_Signup/Teacher_Signup.css'
 import { HiArrowLeft } from "react-icons/hi";
@@ -61,6 +62,15 @@ const Teacher_Signup = () => {
           value={userInputs.lastName}
           />
         </div>
+        <div className="teachersignupforms">
+          <div className="firstndlast">
+            <div className="inputNames">
+              <label>Full Name</label>
+            </div>
+            <input type="text" placeholder="First name" className="namesbtn" />
+            <input type="text" placeholder="Last name" className="namesbtn" />
+          </div>
+
 
         <div className='email'>
           <label>Email</label>
@@ -84,11 +94,18 @@ const Teacher_Signup = () => {
           value={userInputs.address}/>
         </div>
 
-        <div className='email'>
-          <label >GitHub Link(If available)</label>
-          <input type="url" placeholder='https://github.com/username/repository' className='emailsbtn' />
+
+          <div className="email">
+            <label>GitHub Link(If available)</label>
+            <input
+              type="url"
+              placeholder="https://github.com/username/repository"
+              className="emailsbtn"
+            />
+          </div>
         </div>
       </div>
+
       <div className='secondqualification'>
         <div className='secondqualificationcontain'>
           <div className='secondqualificationclicks'>
@@ -176,8 +193,9 @@ const Teacher_Signup = () => {
         <Aplication_Popup open={popup} onClose={()=> setPopup(false)}/>
       </div>
     </div>
+
     </>
-  )
-}
+  );
+};
 
 export default Teacher_Signup;
