@@ -1,84 +1,73 @@
-.theHeaderPusher{
-    width: 100%;
-    height: 105px;
+.teachersignwrap {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../../../public/background_Image2.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.teachersignupname {
+  width: 85%;
+  height: 20vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 80px;
+
+  & h1 {
+    font-size: 40px;
+  }
+}
+.teachersignupforms {
+  width: 85%;
+  min-height: 100vh;
+  /* background-color: salmon; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
 }
 
-.teachersignwrap{
-    width: 100%;
-    height: 100vh;
-    background-color: plum;
-    background-image: url("../../../public/background_Image2.png");
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    flex-direction: column;
-    
-}
-.teachersignupname{
-    width: 90%;
-    height: 10%;
-    /* background-color: palevioletred; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-
-    & h1{
-        font-size: 40px;
-    }
-}
-.teachersignupforms{
-    width: 70%;
-    height: 65%;
-    /* background-color: salmon; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 30px;
-    margin-left: 130px;
+.inputNames {
+  width: 100%;
 }
 
-.inputNames{
-    width: 100%;
+.firstndlast {
+  width: 70%;
+  height: 20%;
+  /* background-color: bisque; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
-.firstndlast{
-    width: 80%;
-    height: 20%;
-    /* background-color: bisque; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.namesbtn {
+  width: 45%;
+  height: 40px;
+  border-radius: 7px;
+  padding-left: 8px;
+  border: none;
+  border: 1px solid black;
 }
-.namesbtn{
-    width: 45%;
-    height: 40px;
-    border-radius: 7px;
-    padding-left: 8px;
-    border: none;
-    border: 1px solid black;
+.email {
+  width: 70%;
+  height: max-content;
+  /* background-color: fuchsia; */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
-.email{
-    width: 80%;
-    height: max-content;
-    /* background-color: fuchsia; */
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    
+.emailsbtn {
+  width: 100%;
+  height: 40px;
+  border-radius: 7px;
+  padding-left: 8px;
+  border: none;
+  border: 1px solid black;
 }
-.emailsbtn{
-    width: 100%;
-    height: 40px;
-    border-radius: 7px;
-    padding-left: 8px;
-    border: none;
-    border: 1px solid black;
-    
-}
-label{
-    font-weight: 300;
-    font-size: 18px;
-    font-family: 'Giest',sans-serif;
+label {
+  font-weight: 300;
+  font-size: 18px;
+  font-family: "Giest", sans-serif;
 }
