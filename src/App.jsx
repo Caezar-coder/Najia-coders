@@ -9,6 +9,7 @@ import Student_Signup from './Auth/Student_signup/Student_Signup'
 import Student_login from './Auth/Student-Login/Student_login'
 import Teacher_Signup from './Auth/Teacher_Signup/Teacher_Signup'
 import Teacher_Login from './Auth/Teacher_Login/Teacher_Login'
+import Paypal from './pages/paypalPage/Paypal'
 
 const App = () => {
   const router = createBrowserRouter([
@@ -47,6 +48,10 @@ const App = () => {
         {
           path: "Teacher_Login",
           element: <Teacher_Login /> 
+        },
+        {
+          path: "paypal",
+          element: <Paypal/> 
         }
       ]
     }

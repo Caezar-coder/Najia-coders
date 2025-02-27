@@ -2,16 +2,35 @@ import React, { useState } from 'react'
 import '../../Auth/Teacher_Signup/Teacher_Signup.css'
 import { HiArrowLeft } from "react-icons/hi";
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 
 const Teacher_Signup = () => {
 
   const navigate = useNavigate();
-
   const [education, setEducation] = useState("");
   const [experience, setExperience] = useState("");
   const [volunteering, setVolunteering] = useState("");
 
+  const [userInputs, setUserinputs] = useState(
+    {
+      firstName: '',
+      lastName: '',
+      email: '',
+      phoneNumber: '',
+      address: '',
+    }
+  )
+
+  console.log(
+    userInputs
+  )
+
+  const handleSubmit = () =>{
+    if(!userInputs.firstName && !userInputs.lastName && !userInputs.email && !userInputs.phoneNumber && !userInputs.address){
+      toast.error('fill in all credencials!')
+    }
+  }
   
   
 
@@ -29,23 +48,36 @@ const Teacher_Signup = () => {
           <label >Full Name</label>
           
           </div>
-          <input type="text" placeholder='First name' className='namesbtn' />
-          <input type="text" placeholder='Last name' className='namesbtn' />
+          <input type="text" placeholder='First name' className='namesbtn' 
+          onChange={(e)=> setUserinputs(prev=> ({...prev, firstName: e.target.value}))}
+          value={userInputs.firstName}
+          />
+          <input type="text" placeholder='Last name' className='namesbtn' 
+          onChange={(e)=> setUserinputs(prev=> ({...prev, lastName: e.target.value}))}
+          value={userInputs.lastName}
+          />
         </div>
 
         <div className='email'>
           <label>Email</label>
-          <input type="email" placeholder='example@email.com' className='emailsbtn' />
+          <input type="email" placeholder='example@email.com' className='emailsbtn' 
+          onChange={(e)=> setUserinputs(prev=> ({...prev, email: e.target.value}))}
+          value={userInputs.email}
+          />
         </div>
 
         <div className='email'>
           <label >Phone Number</label>
-          <input type="number" placeholder='080xxxxxxx' className='emailsbtn' />
+          <input type="number" placeholder='080xxxxxxx' className='emailsbtn' 
+          onChange={(e)=> setUserinputs(prev=> ({...prev, phoneNumber: e.target.value}))}
+          value={userInputs.phoneNumber}/>
         </div>
 
         <div className='email'>
           <label >Address</label>
-          <input type="text" placeholder='1234 Street name,City,State' className='emailsbtn' />
+          <input type="text" placeholder='1234 Street name,City,State' className='emailsbtn' 
+          onChange={(e)=> setUserinputs(prev=> ({...prev, address: e.target.value}))}
+          value={userInputs.address}/>
         </div>
 
         <div className='email'>
@@ -59,6 +91,7 @@ const Teacher_Signup = () => {
             <h4>Education Qualification</h4>
             <div className='clicks'>
               <p>OND/Advanced Diploma <input type="radio" 
+                    
                     name="education" 
                     value="OND/Advanced Diploma" 
                     checked={education === "OND/Advanced Diploma"} 
@@ -134,7 +167,7 @@ const Teacher_Signup = () => {
         <div className='motivates'>
           <h4>What motivates you?</h4>
           <input type="text" placeholder='Briefly tell us your motivation for applying for this position ' className='motivatebtn'/>
-          <button>Submit</button>
+          <button onClick={handleSubmit}>Submit</button>
         </div>
       </div>
     </div>
