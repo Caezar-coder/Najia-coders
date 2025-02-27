@@ -5,7 +5,7 @@
 
 .teachersignwrap{
     width: 100%;
-    height: 100vh;
+    height: max-content;
     background-color: plum;
     background-image: url("../../../public/background_Image2.png");
     display: flex;
@@ -82,3 +82,211 @@ label{
     font-size: 18px;
     font-family: 'Giest',sans-serif;
 }
+.secondqualification{
+    width: 56%;
+    height: 671px;
+    margin-left: 130px;
+    margin-top: 50px;
+    /* background-color: firebrick; */
+}
+.secondqualificationcontain{
+    width: 50%;
+    height: 60%;
+    /* background-color: darkcyan; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.secondqualificationclicks{
+    width: 70%;
+    height: 30%;
+    /* background-color: hotpink; */
+
+    & h4{
+        font-weight: 300;
+        font-size: 18px;
+        font-family: 'Giest',sans-serif;
+    }
+}
+.clicks{
+    width: 100%;
+    height: 70%;
+    /* background-color: darkblue; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    & p{
+        width: 78%;
+        display: flex;
+        justify-content: space-between;
+        /* background: red; */
+        font-weight: 300;
+        font-size: 15px;
+        font-family: 'Giest',sans-serif;
+    }
+}
+
+.clicks1{
+    width: 60%;
+    height: 70%;
+    /* background-color: darkblue; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    & p{
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        /* background: red; */
+        font-weight: 300;
+        font-size: 12px;
+        font-family: 'Giest',sans-serif;
+    }
+}
+
+.languageoptions{
+    width: 100%;
+    height: 15%;
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & h4{
+        font-weight: 300;
+        font-size: 18px;
+        font-family: 'Giest',sans-serif;
+    }
+}
+
+.motivates{
+    width: 100%;
+    height:45%;
+    /* background-color: slateblue; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & h4{
+        font-weight: 300;
+        font-size: 18px;
+        font-family: 'Giest',sans-serif;
+    }
+    
+}
+.motivatebtn{
+    width: 100%;
+    height: 200px;
+    padding-bottom: 150px;
+    font-size: 15px;
+    font-family: 'Giest',sans-serif;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+button{
+    width: 20%;
+    height: 15%;
+    background-color: #048c63;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Giest',sans-serif;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .teachersignwrap {
+        width: 100%;
+        min-height: 100vh;
+        padding: 10px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teachersignupname {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .teachersignupname h1 {
+        font-size: 24px;
+    }
+
+    .teachersignupforms {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .firstndlast {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .namesbtn,
+    .emailsbtn {
+        width: 100%;
+        height: 45px;
+    }
+
+    .email {
+        width: 100%;
+    }
+
+    .secondqualification {
+        width: 100%;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondqualificationcontain {
+        width: 100%;
+    }
+
+    .clicks,
+    .clicks1 {
+        width: 100%;
+    }
+
+    .languageoptions,
+    .motivates {
+        width: 100%;
+    }
+
+    .motivatebtn {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+    }
+
+    button {
+        width: 90%;
+        max-width: 300px;
+        height: 50px;
+        font-size: 16px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

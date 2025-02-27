@@ -72,7 +72,6 @@
     .getInvolvePageWRapper{
         width: 100%;
         height: 100vh;
-        background: red;
         background-image: url("../../assets/involveWaterMarkImage.JPG");
         background-size: cover;
     
