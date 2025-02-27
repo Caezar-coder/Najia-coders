@@ -43,19 +43,19 @@ const About = () => {
 
   const secondData = [
     {
-      img: "/public/Jelani_Nelson.jpg",
+      img: "/public/Jelani Nelson.png",
       title1: "Jelani Nelson, Ph.d",
       title2: "Lead advisor",
       title3: "Wikipedia link",
     },
     {
-      img: "/Daniel_Alabi.jpg",
+      img: "/public/Daniel Alabi.png",
       title1: "Daniel Alabi, Ph.d",
       title2: "President and lead instructor",
       title3: "Website link",
     },
     {
-      img: "/Lekan_Afuye.jpg",
+      img: "/public/Lekan Afuye.png",
       title1: "Lekan Afuye, Ph.d",
       title2: "Vice president",
       title3: "Linkdn link",
@@ -64,19 +64,19 @@ const About = () => {
 
   const thirdData = [
     {
-      img: "/Alida_Monaco.jpg",
+      img: "/public/Alida Monaco.png",
       title1: "Alida Monaco, Ph.d",
       title2: "Chief of operations",
       title3: "Linkdn link",
     },
     {
-      img: "/Philip_Abel.jpg",
+      img: "/public/Philip Abel.png",
       title1: "Philip Abel, Ph.d",
       title2: "Secretary",
       title3: "Linkdn link",
     },
     {
-      img: "/Benem_Davids.jpg",
+      img: "/public/Benem Davids.png",
       title1: "Benem Davis, Ph.d",
       title2: "Web master",
       title3: "Linkdn link",
@@ -156,7 +156,7 @@ const About = () => {
         <div className="section_four">
           <div className="team-container">
             <div className="team_card">
-              <img src="/public/tobi_alabi.jpg" className="teams" />
+              <img src="/public/Oluwatobi Alabi.png" className="teams" />
 
               <div className="team_text">
                 <h4>Oluwatobi Alabi</h4>
