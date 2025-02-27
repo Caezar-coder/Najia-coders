@@ -101,7 +101,7 @@ label{
     flex-direction: column;
 }
 .secondqualificationclicks{
-    width: 70%;
+    width: 100%;
     height: 30%;
     /* background-color: hotpink; */
     display: flex;
@@ -120,19 +120,23 @@ label{
     height: 70%;
     /* background-color: darkblue; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
 
+
     & p{
-        width: 78%;
+        width: 86%;
+        height: 10%;
         display: flex;
-        justify-content: space-between;
-        /* background: red; */
+        justify-content: center;
+        align-items: center;
+        /* background-color: red; */
         font-weight: 300;
         font-size: 15px;
         font-family: 'Giest',sans-serif;
     }
 }
+
 
 .clicks1{
     width: 60%;
@@ -143,12 +147,13 @@ label{
     flex-direction: column;
 
     & p{
-        width: 75%;
-        display: flex;
-        justify-content: space-between;
-        /* background: red; */
+        width: 98%;
+        /* height: 10%; */
+        /* display: flex;  
+        justify-content: space-between; */
+        /* background: red;     */
         font-weight: 300;
-        font-size: 12px;
+        font-size: 15px;
         font-family: 'Giest',sans-serif;
     }
 }
@@ -205,6 +210,7 @@ button{
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -298,6 +304,7 @@ button{
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
 }
 
