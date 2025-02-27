@@ -1,0 +1,202 @@
+.paypalWrapper{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../../public/background_Image2.png);
+}
+
+.paypalCArdAndHeadingWRapper{
+    width: 65%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent ;
+}
+
+.closePaypayPageIcon{
+    font-size: 30px;
+    display: flex;
+    align-self: flex-end;
+    margin-right: 200px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #38995d;
+}
+
+.paypayHeading{
+    width: 95%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    gap: 10px;
+    background: #38995d;
+}
+
+.PaypalLogo{
+    width: 20px;
+}
+
+.paypayHeading p{
+    font-family: 'Giest',sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.paypalCard{
+    width: 95%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #38995d;
+    background: #f2f3eb;
+    box-shadow: rgba(154, 215, 85, 0.24) 0px 3px 8px;
+}
+
+
+.secureDonationWrapperCArd{
+    width: 65%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #e2edd6;
+}
+
+.secureDonationWrapperCArd p{
+    font-size: 20px;
+    font-family: 'Giest',sans-serif;
+    font-weight: 500;
+}
+
+.oneTimeAndMonthHolder{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background: grey; */
+}
+
+.oneTimeAndMonthHolder p{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 400;
+}
+
+.oneTimeAndMonthHolder input[type="checkbox"]{
+    background: #38995d;
+    accent-color: #38995d;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.paypalPaymentWrapper{
+    width: 50%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background: greenyellow; */
+}
+
+.amountWrapper{
+    width: 90%;
+    height: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    /* background: #000; */
+}
+
+.amountCard {
+    font-size: 22px;
+    padding: 8px 15px 8px  15px;
+    width: 85PX;
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #e2edd6;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.amountCard span{
+    font-family: 'Giest',sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 19px;
+}
+
+.amountOutput{
+    width: 84%;
+    height: 15%;
+    border-radius: 10px;
+    border: 1px solid #38995d;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e2edd6;
+}
+
+.amountOutput h2{
+    font-family: 'Giest',sans-serif;
+    font-size: 25px;
+    font-weight: 550;
+    color: #38995d;
+}
+
+.amountOutput p{
+    font-family: 'Giest',sans-serif;
+    color: #38995d;
+}
+
+input{
+    width: 84%;
+    height: 34%;
+    outline: none;
+    padding: 5px;
+    font-family: 'Giest',sans-serif;
+    border: 1px solid #38995d;
+}
+
+input::placeholder{
+    font-family: 'Giest',sans-serif;
+    color: grey;
+}
+
+.paypalDonateBtn{
+    width: 170px;
+    font-weight: 500;
+    background: #6ca333;
+}
+
+
+@media screen and (max-width: 480px) {
+    
+}

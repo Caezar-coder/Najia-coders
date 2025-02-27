@@ -9,9 +9,12 @@ const Involve = () => {
     setPopup(true)
   }
   const navigate = useNavigate()
+
+
+
   return (
     <>
-    <div className="theHeaderPusher"></div>
+    {/* <div className="theHeaderPusher"></div> */}
     <div className='getInvolvePageWRapper'>
       <div className="getInvolvePageWRapperCover">
         <div className="getInvolvePageWRapperCoverTextWrapper">
@@ -31,10 +34,14 @@ const Involve = () => {
           <p>Every contribution supports resources ,mentorshipand hands-on experience
             ,giving students the <br /> tools they need to succeed. <br /> Donate today and help shape the future of young innovators </p>
 
+
           <button className='teacherbtn1' onClick={handlepopup}>Donate</button>
           <Popup open={popup} onClose={()=> setPopup(false)}/>
+
         </div>
       </div>
+
+
     </div>
     </>
   )
