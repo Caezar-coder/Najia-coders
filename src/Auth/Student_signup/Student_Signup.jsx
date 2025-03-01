@@ -5,19 +5,7 @@ const Student_Signup = () => {
   return (
     <div className="signup-container-6">
       <div className="signup-box-6">
-        <h2
-          style={{
-            color: "black",
-            fontSize: "40px",
-            width: "70%",
-            textAlign: "center",
-            paddingBottom: "25px",
-            display: "flex",
-            justifyContent: "flex-end",
-          }}
-        >
-          Student Application
-        </h2>
+        <h2>Student Application</h2>
         <form className="signup-form-6">
           <div className="input-groupfull-name-6">
             <label>Full Name</label>
