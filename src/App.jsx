@@ -8,6 +8,7 @@ import Involve from "./Pages/Get-Involved/Involve";
 import Student_Signup from "./Auth/Student_signup/Student_Signup";
 import Teacher_Signup from "./Auth/Teacher_Signup/Teacher_Signup";
 import Card_Donation from "./Pages/card-donations/Card_Donation";
+import Paypal from "./Pages/paypalPage/Paypal";
 
 const App = () => {
   const router = createBrowserRouter([
