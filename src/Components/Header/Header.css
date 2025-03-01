@@ -76,6 +76,10 @@ h4:hover {
   animation: fadein 0.9s ease;
 }
 
+.manu-icon {
+  display: none;
+}
+
 .teacher {
   width: 180px;
   min-width: max-content;
@@ -152,5 +156,443 @@ h4:hover {
   to {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+.manu-icon {
+  display: none; /* Hide the hamburger icon on desktop */
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .Texts {
+    display: none;
+  }
+  .Texts {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Texts h4 {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .Texts p {
+    font-family: sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  h4:hover {
+    color: #048c63;
+    transition: 350ms ease-in;
+  }
+
+  .Directory {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #048c63;
+    color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .dropCard {
+    width: 100px;
+    min-width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 40px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    animation: fadeIn 0.9s ease;
+  }
+
+  .manu-icon {
+    display: none;
+  }
+
+  .teacher {
+    width: 180px;
+    min-width: max-content;
+    height: 35px;
+    border: 2px solid #048c63;
+    border-radius: 20px;
+    color: #048c63;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: center;
+    background: transparent;
+    animation: scaleUp 0.9s ease;
+    transition: background-color 0.3s ease, color 0.5s ease;
+  }
+
+  .student {
+    width: 100px;
+    min-width: max-content;
+    height: 35px;
+    border: 2px solid #048c63;
+    border-radius: 20px;
+    color: #048c63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    background: transparent;
+    transition: background-color 0.3s ease, color 0.5s ease;
+    animation: scaleUp 0.9s ease;
+  }
+
+  .student:hover {
+    background-color: #048c63;
+    color: white;
+    cursor: pointer;
+  }
+
+  .teacher:hover {
+    background-color: #048c63;
+    color: white;
+    cursor: pointer;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translatex(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translatex(0);
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .menu-icon {
+    display: none; /* Hide the hamburger icon on desktop */
+    cursor: pointer;
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    .Texts {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 10px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+
+    .Texts.open {
+      display: flex;
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .manu-icon {
+      display: block;
+      cursor: pointer;
+      color: #048c63;
+    }
+
+    .manu-icondiv {
+      width: 150px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: #048c63;
+      color: white;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+    }
+    .Header_Wrapper {
+      justify-content: space-between;
+      align-items: center;
+    }
+    .mobile-menu {
+      width: max-content;
+      height: max-content;
+      border-radius: 20px;
+      top: 100px;
+      right: 35px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: flex-end;
+      cursor: pointer;
+      position: absolute;
+    }
+  }
+  .nav {
+    width: 60px;
+    height: 35px;
+    border: 2px solid #048c63;
+    border-radius: 20px;
+    color: white;
+    background-color: #048c63;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: center;
+    animation: scaleUp 0.9s ease;
+  }
+  .nav1 {
+    width: 80px;
+    height: 35px;
+    border: 2px solid #048c63;
+    background-color: #048c63;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.5s ease;
+    animation: scaleUp 0.9s ease;
+  }
+  .nav3 {
+    width: 160px;
+    height: 35px;
+    border: 2px solid #048c63;
+    border-radius: 20px;
+    background-color: #048c63;
+    color: white;
+    background-color: #048c63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    animation: scaleUp 0.9s ease;
+  }
+
+  .nav4 {
+    width: 120px;
+    height: 35px;
+    border: 2px solid #048c63;
+    border-radius: 20px;
+    background-color: #048c63;
+    color: white;
+    background-color: #048c63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    animation: scaleUp 0.9s ease;
+  }
+
+  .nav5 {
+    width: 100px;
+    height: 35px;
+    border: 2px solid #048c63;
+    border-radius: 20px;
+    background-color: #048c63;
+    color: white;
+    background-color: #048c63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    animation: scaleUp 0.9s ease;
+  }
+}
+@media (min-width: 769px) and (max-width: 1114px) {
+  .Texts {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  .Texts.open {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .manu-icon {
+    display: block;
+    cursor: pointer;
+    color: #048c63;
+  }
+
+  .manu-icondiv {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #048c63;
+    color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  .Header_Wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobile-menu {
+    width: max-content;
+    height: max-content;
+    border-radius: 20px;
+    top: 170px;
+    right: 70px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    position: absolute;
+  }
+  .nav {
+    width: 80px;
+    height: 40px;
+    border: 2px solid #048c63;
+    border-radius: 20px;
+    color: white;
+    background-color: #048c63;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: center;
+    animation: scaleUp 0.9s ease;
+  }
+  .nav1 {
+    width: 100px;
+    height: 40px;
+    border: 2px solid #048c63;
+    background-color: #048c63;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.5s ease;
+    animation: scaleUp 0.9s ease;
+  }
+  .nav3 {
+    width: 180px;
+    height: 40px;
+    border: 2px solid #048c63;
+    border-radius: 20px;
+    background-color: #048c63;
+    color: white;
+    background-color: #048c63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    animation: scaleUp 0.9s ease;
+  }
+
+  .nav4 {
+    width: 140px;
+    height: 40px;
+    border: 2px solid #048c63;
+    border-radius: 20px;
+    background-color: #048c63;
+    color: white;
+    background-color: #048c63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    animation: scaleUp 0.9s ease;
+  }
+
+  .nav5 {
+    width: 120px;
+    height: 40px;
+    border: 2px solid #048c63;
+    border-radius: 20px;
+    background-color: #048c63;
+    color: white;
+    background-color: #048c63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    animation: scaleUp 0.9s ease;
   }
 }

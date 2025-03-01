@@ -339,6 +339,10 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+
+  .seemore {
+    text-decoration: none;
+  }
 }
 
 /* Mobile responsiveness (screen width between 480px and 768px)

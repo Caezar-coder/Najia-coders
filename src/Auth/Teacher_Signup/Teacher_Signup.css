@@ -15,6 +15,12 @@
   align-items: center;
   gap: 80px;
 
+  & h1 {
+    font-size: 40px;
+    font-family: tahoma;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.801);
+  }
 }
 .teachersignupforms {
   width: 85%;
@@ -29,9 +35,14 @@
 .inputNames {
   width: 100%;
 }
+.nameinput {
+  width: 87.5%;
+  display: flex;
+  justify-content: space-between;
+}
 
 .firstndlast {
-  width: 70%;
+  width: 80%;
   height: 20%;
   /* background-color: bisque; */
   display: flex;
@@ -44,8 +55,10 @@
   height: 40px;
   border-radius: 7px;
   padding-left: 8px;
-  border: none;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.473);
+  outline: none;
+  font-size: 15px;
+  font-family: sans-serif;
 }
 .email {
   width: 70%;
@@ -60,244 +73,364 @@
   height: 40px;
   border-radius: 7px;
   padding-left: 8px;
-  border: none;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.473);
+  outline: none;
+  font-size: 15px;
+  font-family: sans-serif;
 }
 label {
   font-weight: 300;
   font-size: 18px;
-  font-family: "Giest", sans-serif;
+  font-family: sans-serif;
 }
 
-label{
-    font-weight: 300;
-    font-size: 18px;
-    font-family: 'Giest',sans-serif;
+.qualification {
+  min-height: 20vh;
+  width: 84%;
 }
-.secondqualification{
-    width: 56%;
-    min-height: 100vh;
-    margin-left: 130px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    /* background-color: firebrick; */
-}
-.secondqualificationcontain{
-    width: 50%;
-    height: 60%;
-    /* background-color: darkcyan; */
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-}
-.secondqualificationclicks{
-    width: 100%;
-    height: 30%;
-    /* background-color: hotpink; */
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    line-height: 20px;
-
-    & h4{
-        font-weight: 300;
-        font-size: 18px;
-        font-family: 'Giest',sans-serif;
-    }
-}
-.clicks{
-    width: 100%;
-    height: 70%;
-    /* background-color: darkblue; */
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-
-
-    & p{
-        width: 86%;
-        height: 10%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* background-color: red; */
-        font-weight: 300;
-        font-size: 15px;
-        font-family: 'Giest',sans-serif;
-    }
+.qualificationdiv {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
-
-.clicks1{
-    width: 60%;
-    height: 70%;
-    /* background-color: darkblue; */
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-
-    & p{
-        width: 98%;
-        /* height: 10%; */
-        /* display: flex;  
-        justify-content: space-between; */
-        /* background: red;     */
-        font-weight: 300;
-        font-size: 15px;
-        font-family: 'Giest',sans-serif;
-    }
+.custom-radio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 8px 0;
+  gap: 10px;
 }
 
-.languageoptions{
-    width: 100%;
-    height: 15%;
-    /* background-color: violet; */
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    & h4{
-        font-weight: 300;
-        font-size: 18px;
-        font-family: 'Giest',sans-serif;
-    }
+.custom-radio {
+  display: flex;
+  justify-content: space-between;
+  height: 5vh;
+  width: 30%;
+  text-align: start;
 }
 
-.motivates{
-    width: 100%;
-    min-height: 50vh;
-    /* background-color: slateblue; */
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.custom-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
 
-    & h4{
-        font-weight: 300;
-        font-size: 18px;
-        font-family: 'Giest',sans-serif;
-    }
-    
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #048c63;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
 }
-.motivatebtn{
-    width: 100%;
-    height: 200px;
-    padding-bottom: 150px;
-    font-size: 15px;
-    font-family: 'Giest',sans-serif;
-    border: 1px solid black;
-    border-radius: 10px;
+
+.custom-radio input:checked + .checkmark {
+  background-color: black;
+  border-color: #048c63;
 }
-button{
-    width: 140px;
-    height: 40px;
-    background-color: #048c63;
-    border: none;
+
+.custom-radio input:checked + .checkmark::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.experience {
+  display: flex;
+  justify-content: space-between;
+  height: 5vh;
+  width: 10%;
+  text-align: start;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 8px 0;
+  gap: 10px;
+}
+
+.experience input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.experience input:checked + .checkmark {
+  background-color: black;
+  border-color: #048c63;
+}
+.experience input:checked + .checkmark::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.volunteering {
+  display: flex;
+  justify-content: space-between;
+  height: 5vh;
+  width: 20%;
+  text-align: start;
+}
+
+.volunteering {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 8px 0;
+  gap: 10px;
+}
+
+.volunteering input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.volunteering input:checked + .checkmark {
+  background-color: black;
+  border-color: #048c63;
+}
+.volunteering input:checked + .checkmark::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.language {
+  width: 70%;
+  height: 20vh;
+  /* background-color: fuchsia; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.motivation {
+  width: 70%;
+  min-height: 30vh;
+  /* background-color: fuchsia; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.textArea {
+  width: 100%;
+  height: 240px;
+  border-radius: 7px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.473);
+  outline: none;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.submitdiv {
+  width: 70%;
+  height: 25vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .submitbtn {
+    width: 150px;
     border-radius: 20px;
+    border: none;
+    background-color: #048c63;
     color: white;
-    font-size: 18px;
-    font-family: 'Giest',sans-serif;
+    font-size: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .submitbtn:hover {
+    border: 3px solid #048c63;
+    border-radius: 30px;
+    transition: 0.05s ease;
+    transform: scale(1);
+    box-shadow: 0 0 5px 0 #048c63;
+  }
+
+  .submittext {
+    color: white;
+    width: 130px;
+    height: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    cursor: pointer;
+    transform: scale(0.9);
+  }
+  .submittext:hover {
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    transition: 0.05s ease;
+    transform: scale(1);
+    box-shadow: 0 0 5px 0 #048c63;
+  }
 }
 
+@media (min-width: 320px) and (max-width: 768px) {
+  .teachersignupname {
+    width: 85%;
+    height: 10vh;
+    gap: 40px;
 
-
-
-
-
-
-@media screen and (max-width: 480px) {
-    .teachersignwrap {
-        width: 100%;
-        min-height: 100vh;
-        padding: 10px;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    & h1 {
+      font-size: 18px;
+      font-family: sans-serif;
+      width: 100%;
     }
+  }
+  .teachersignupforms {
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: salmon; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .firstndlast {
+    width: 84%;
+    display: flex;
+    gap: 10px;
+  }
+  .nameinput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .namesbtn {
+    width: 100%;
+  }
+  .email {
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
 
-    .teachersignupname {
-        width: 100%;
-        text-align: center;
-        flex-direction: column;
-        gap: 10px;
-    }
+  .custom-radio {
+    width: 70%;
+  }
 
-    .teachersignupname h1 {
-        font-size: 24px;
-    }
+  .experience {
+    width: 35%;
+  }
+  .volunteering {
+    width: 70%;
+  }
 
-    .teachersignupforms {
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .firstndlast {
-        width: 100%;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-
-    .namesbtn,
-    .emailsbtn {
-        width: 100%;
-        height: 45px;
-    }
-
-    .email {
-        width: 100%;
-    }
-
-    .secondqualification {
-        width: 100%;
-        margin: 20px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .secondqualificationcontain {
-        width: 100%;
-    }
-
-    .clicks,
-    .clicks1 {
-        width: 100%;
-    }
-
-    .languageoptions,
-    .motivates {
-        width: 100%;
-    }
-
-    .motivatebtn {
-        width: 100%;
-        height: 150px;
-        padding: 10px;
-    }
-
-    button {
-        width: 90%;
-        max-width: 300px;
-        height: 50px;
-        font-size: 16px;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-    }
+  .language {
+    width: 100%;
+  }
+  .motivation {
+    width: 100%;
+  }
 }
 
+@media (min-width: 769px) and (max-width: 1114px) {
+  .teachersignupname {
+    width: 85%;
+    height: 10vh;
+    gap: 40px;
 
+    & h1 {
+      font-size: 18px;
+      font-family: sans-serif;
+      width: 100%;
+    }
+  }
+  .teachersignupforms {
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: salmon; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .firstndlast {
+    width: 84%;
+    display: flex;
+    gap: 10px;
+  }
+  .nameinput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .namesbtn {
+    width: 100%;
+  }
+  .email {
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .custom-radio {
+    width: 70%;
+  }
+
+  .experience {
+    width: 35%;
+  }
+  .volunteering {
+    width: 70%;
+  }
+
+  .language {
+    width: 100%;
+  }
+  .motivation {
+    width: 100%;
+  }
+}

@@ -1,8 +1,13 @@
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import "./home.css";
+import { useNavigate } from "react-router";
 
 const Home = () => {
+  const navigate = useNavigate();
+  const handleLearnMore = () => {
+    window.location.href = "https://www.instagram.com/naijacoder/";
+  };
   return (
     <div className="homebody">
       {/* section1 */}
@@ -114,7 +119,7 @@ const Home = () => {
           </div>
           <img src="\WhatsApp Image 2025-02-25 at 14.38.15_871409e4.jpg" />
         </div>
-        <div className="seemorediv">
+        <div className="seemorediv" onClick={handleLearnMore}>
           <button className="seemore">
             See More <IoIosArrowRoundForward size={49} />
           </button>
