@@ -26,6 +26,7 @@ const Student_Signup = () => {
             <label>Phone Number</label>
             <input type="text" placeholder="080xxxxxxx" />
           </div>
+
           <div className="input-group-6">
             <label>Address</label>
             <input type="text" placeholder="1234 Street Name, City, State" />
@@ -81,6 +82,19 @@ const Student_Signup = () => {
             Submit
           </button>
         </form>
+      </div>
+
+      <div>
+        <div className="input-group-6">
+          <label>What interests you about this program?</label>
+          <textarea
+            className="textarea-input-6"
+            placeholder="Brief explanation why you want to join this program"
+          ></textarea>
+        </div>
+        <button type="submit" className="signup-button">
+          Submit
+        </button>
       </div>
     </div>
   );
