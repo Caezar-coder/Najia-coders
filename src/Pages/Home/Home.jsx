@@ -1,13 +1,14 @@
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import "./home.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 
 const Home = () => {
-  const navigate = useNavigate()
-  const handleLearnMore = () =>{
-    WindowSidebar.location.href=""
-  }
+  const navigate = useNavigate();
+  const handleLearnMore = () => {
+    window.location.href = "https://www.instagram.com/naijacoder/";
+  };
+
   return (
     <div className="homebody">
       <div className="sec1">

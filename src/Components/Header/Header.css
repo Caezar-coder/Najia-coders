@@ -1,4 +1,3 @@
-
 .Header_Body {
   width: 100%;
   height: 15vh;
@@ -74,6 +73,10 @@ h4:hover {
   align-items: center;
   gap: 7px;
   animation: fadein 0.9s ease;
+}
+
+.manu-icon {
+  display: none;
 }
 
 .teacher {
@@ -152,5 +155,322 @@ h4:hover {
   to {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+.manu-icon {
+  display: none; /* Hide the hamburger icon on desktop */
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .Texts {
+    display: none;
+  }
+
+  .manu-icon {
+    display: block;
+    cursor: pointer;
+    color: #048c63;
+  }
+
+  .manu-icondiv {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #048c63;
+    color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  .Header_Wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobile-menu {
+    width: max-content;
+    height: max-content;
+    border-radius: 20px;
+    top: 100px;
+    right: 35px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    position: absolute;
+  }
+  .nav {
+    width: 60px;
+    height: 35px;
+    border: 2px solid #048c63;
+    border-radius: 20px;
+    color: white;
+    background-color: #048c63;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: center;
+    animation: scaleUp 0.9s ease;
+  }
+  .nav1 {
+    width: 80px;
+    height: 35px;
+    border: 2px solid #048c63;
+    background-color: #048c63;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.5s ease;
+    animation: scaleUp 0.9s ease;
+  }
+  .nav3 {
+    width: 160px;
+    height: 35px;
+    border: 2px solid #048c63;
+    border-radius: 20px;
+    background-color: #048c63;
+    color: white;
+    background-color: #048c63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    animation: scaleUp 0.9s ease;
+  }
+
+  .nav4 {
+    width: 120px;
+    height: 35px;
+    border: 2px solid #048c63;
+    border-radius: 20px;
+    background-color: #048c63;
+    color: white;
+    background-color: #048c63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    animation: scaleUp 0.9s ease;
+  }
+
+  .nav5 {
+    width: 100px;
+    height: 35px;
+    border: 2px solid #048c63;
+    border-radius: 20px;
+    background-color: #048c63;
+    color: white;
+    background-color: #048c63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    animation: scaleUp 0.9s ease;
+  }
+  .nav:hover {
+    background-color: #42c49d;
+    border: #58e0b8b4;
+    color: white;
+    cursor: pointer;
+  }
+  .nav1:hover {
+    background-color: #42c49d;
+    border: #58e0b8b4;
+    color: white;
+    cursor: pointer;
+  }
+  .nav3:hover {
+    background-color: #42c49d;
+    border: #58e0b8b4;
+    color: white;
+    cursor: pointer;
+  }
+  .nav4:hover {
+    background-color: #42c49d;
+    border: #58e0b8b4;
+    color: white;
+    cursor: pointer;
+  }
+  .nav5:hover {
+    background-color: #42c49d;
+    border: #58e0b8b4;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1114px) {
+  .Texts {
+    display: none;
+  }
+
+  .manu-icon {
+    display: block;
+    cursor: pointer;
+    color: #048c63;
+  }
+
+  .manu-icondiv {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #048c63;
+    color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  .Header_Wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobile-menu {
+    width: max-content;
+    height: max-content;
+    border-radius: 20px;
+    top: 170px;
+    right: 70px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    position: absolute;
+  }
+  .nav {
+    width: 80px;
+    height: 40px;
+    border: 2px solid #048c63;
+    border-radius: 20px;
+    color: white;
+    background-color: #048c63;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: center;
+    animation: scaleUp 0.9s ease;
+  }
+  .nav1 {
+    width: 100px;
+    height: 40px;
+    border: 2px solid #048c63;
+    background-color: #048c63;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.5s ease;
+    animation: scaleUp 0.9s ease;
+  }
+  .nav3 {
+    width: 180px;
+    height: 40px;
+    border: 2px solid #048c63;
+    border-radius: 20px;
+    background-color: #048c63;
+    color: white;
+    background-color: #048c63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    animation: scaleUp 0.9s ease;
+  }
+
+  .nav4 {
+    width: 140px;
+    height: 40px;
+    border: 2px solid #048c63;
+    border-radius: 20px;
+    background-color: #048c63;
+    color: white;
+    background-color: #048c63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    animation: scaleUp 0.9s ease;
+  }
+
+  .nav5 {
+    width: 120px;
+    height: 40px;
+    border: 2px solid #048c63;
+    border-radius: 20px;
+    background-color: #048c63;
+    color: white;
+    background-color: #048c63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    animation: scaleUp 0.9s ease;
+  }
+  .nav:hover {
+    background-color: #42c49d;
+    border: #58e0b8b4;
+    color: white;
+    cursor: pointer;
+  }
+  .nav1:hover {
+    background-color: #42c49d;
+    border: #58e0b8b4;
+    color: white;
+    cursor: pointer;
+  }
+  .nav3:hover {
+    background-color: #42c49d;
+    border: #58e0b8b4;
+    color: white;
+    cursor: pointer;
+  }
+  .nav4:hover {
+    background-color: #42c49d;
+    border: #58e0b8b4;
+    color: white;
+    cursor: pointer;
+  }
+  .nav5:hover {
+    background-color: #42c49d;
+    border: #58e0b8b4;
+    color: white;
+    cursor: pointer;
   }
 }

@@ -5,6 +5,7 @@ const Student_Signup = () => {
   return (
     <div className="signup-container-6">
       <div className="signup-box-6">
+
         <h2 className="signup-title">Student Application</h2>
 
         <form className="signup-form-6">
