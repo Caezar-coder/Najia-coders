@@ -1,19 +1,22 @@
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import "./home.css";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate()
+  const handleLearnMore = () =>{
+    WindowSidebar.location.href=""
+  }
   return (
     <div className="homebody">
-      {/* section1 */}
       <div className="sec1">
         <h1>Learn to code, Build Your Future.</h1>
         <p>
           NaijaCoder organizes a free, intensive program in Nigeria to teach the
           basics of algorithms and Computer programming to high schoolers. The
           program also provide resources for students applying to universities
-          abroad.
-          <br /> Programming offers these students, especially those from
+          abroad. Programming offers these students, especially those from
           indigent backgrounds, an opportunity to learn profitable skills and
           ignite their passions for problem-solving and critical thinking.
         </p>
@@ -27,18 +30,11 @@ const Home = () => {
             <span className="span">Learn more</span>
           </button>
 
-          <button
-            className="applynow"
-            style={{
-              textDecoration: "none",
-            }}
-          >
+          <button className="applynow" >
             <span className="span1">Apply Now</span>
           </button>
         </div>
       </div>
-
-      {/* section2 */}
       <div className="sec2">
         <img style={{ width: "180px" }} src="\Group 140.png" />
 
@@ -92,14 +88,18 @@ const Home = () => {
       <div className="sec3">
         <h2>Our Supporters</h2>
         <div className="supporters">
+          <div className="querryimg1">
           <img className="querryimg1" src="/mastercard.jpeg" alt="mastercard" />
-          <img
-            className="querryimg2"
-            src="\simonsFoundation.png"
-            alt="SimonsFoundation"
-          />
+          </div>
+          <div className="querryimg2">
+          <img className="querryimg2"src="\simonsFoundation.png"alt="SimonsFoundation"/>
+          </div>
+          <div className="querryimg3">
           <img className="querryimg3" src="/Berkeley.png" alt="Berkeley" />
+          </div>
+          <div className="querryimg4">
           <img className="querryimg4" src="/mercatus.png" alt="mercatus" />
+          </div>
         </div>
       </div>
 
@@ -114,9 +114,9 @@ const Home = () => {
           </div>
           <img src="\WhatsApp Image 2025-02-25 at 14.38.15_871409e4.jpg" />
         </div>
-        <div className="seemorediv">
+        <div className="seemorediv" onClick={handleLearnMore}>
           <button className="seemore">
-            See More <IoIosArrowRoundForward size={49} />
+            See More <IoIosArrowRoundForward size={20} />
           </button>
         </div>
       </div>
