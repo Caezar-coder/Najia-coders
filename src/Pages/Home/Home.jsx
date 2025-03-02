@@ -32,7 +32,7 @@ const Home = () => {
           </button>
 
           <button className="applynow" >
-            <span className="span1">Apply Now</span>
+            <span className="span1" onClick={()=> navigate("/Teacher_Signup")}>Apply Now</span>
           </button>
         </div>
       </div>
