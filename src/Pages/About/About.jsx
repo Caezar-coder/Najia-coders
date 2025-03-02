@@ -64,7 +64,7 @@ const About = () => {
 
   const thirdData = [
     {
-      img: "/Alida Monaco.png",
+      img: "/public/Alida Monaco.png",
       title1: "Alida Monaco, Ph.d",
       title2: "Chief of operations",
       title3: "Linkdn link",

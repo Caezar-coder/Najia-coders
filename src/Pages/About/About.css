@@ -373,11 +373,23 @@
     font-size: 20px;
     font-style: normal;
   }
+  .team-container{
+    height: max-content;
+  }
 
   .team_card {
     display: flex;
     width: 344px;
     height: 34vh;
+    margin-bottom: 20px;
+
+    & img{
+      margin-bottom: 30px;
+    }
+  }
+
+  .team_text{
+    margin-bottom: 20px;
   }
   .section_four {
     width: 100%;
@@ -495,11 +507,13 @@
     font-size: 28px;
     font-style: normal;
   }
+  
 
   .team_card {
     display: flex;
     width: 344px;
     height: 34vh;
+    background-color: red;
   }
   .section_four {
     width: 100%;
